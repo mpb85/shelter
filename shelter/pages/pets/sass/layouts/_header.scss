@@ -1,0 +1,60 @@
+.header {
+  padding: 2.05rem 0;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.header__logo {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    > h2 {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 110%;
+        letter-spacing: 0.093em;
+        color: $color-text;
+    }
+    > p {
+        font-family: $secondFamily;
+        font-size: .8125rem;
+        letter-spacing: 0.136em;
+        color: $color-dark-link-hover;
+        font-weight: 400;
+        margin-left: .25rem;
+    }
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+    display: flex;
+    gap: 2.4rem;
+}
+.menu__item {
+}
+.menu__link {
+    font-family: $secondFamily;
+    color: $color-text;
+    size: 15px;
+    line-height: 160%;
+    
+    &:hover {
+        color: $color-dark-link-hover;
+        transition: all 0.3s;
+    }
+}
+.menu__link-active {
+    color: $color-dark-link-hover;
+    border-bottom: .1875rem solid $color-dark-link-hover;
+    padding-bottom: .25rem;
+    cursor: not-allowed;
+}

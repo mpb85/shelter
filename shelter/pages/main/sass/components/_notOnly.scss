@@ -1,0 +1,53 @@
+.not-only {
+  background:
+    url(./../../../assets/images/noise_transparent@2x.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+}
+.not-only__container {
+  display: flex;
+  padding-block-start: 11.25rem;
+  gap: 2.625rem;
+}
+.not-only__content {
+  padding-block-start: 10.1875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2.625rem;
+  h2 {
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: $background-color;
+    width: 21rem;
+  }
+  p {
+    font-family: $secondFamily;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: $color-link;
+    width: 31.5rem;
+  }
+  button {
+    border-radius: 100px;
+    padding: 15px 45px;
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    background-color: $primary-color;
+    &:hover {
+        cursor: pointer;
+        background: $primary-light-color;
+    }
+    
+  }
+}
+.not-only_label {
+  font-family: $fontFamily;
+}
+.not-only_img {
+}

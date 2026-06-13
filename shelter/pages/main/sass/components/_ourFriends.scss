@@ -1,0 +1,103 @@
+.our-friends {
+  background-color: $background-secendory-color;
+}
+.our-friends__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+  align-items: center;
+  padding-block: 5rem 6.25rem;
+  h2 {
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $color-text;
+    span {
+      display: block;
+    }
+  }
+}
+.our-friends__slider {
+  display: flex;
+  gap: 53px;
+  align-items: center;
+}
+.slider-arrow {
+  width: 3.25rem;
+  height: 52px;
+  border: 2px solid $primary-color;
+  border-radius: 100px;
+  position: relative;
+  text-align: center;
+  align-content: center;
+  &:hover {
+        cursor: pointer;
+        background: $primary-light-color;
+        border: .125rem solid $primary-light-color;
+    }
+}
+._icon-slider-arrow-left {
+}
+._icon-slider-arrow-right {
+}
+.slider__cards {
+  display: flex;
+  gap: 5.625rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875rem;
+  border-radius: 0.5625rem;
+  background: $color-link-hover;
+  padding-block-end: 1.875rem;
+  img {
+    border-radius: 9px 9px 0 0;
+  }
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  }
+  &:hover .card_button {
+    background: $primary-light-color;
+    border: 2px solid $primary-light-color;
+  }
+}
+.card_name {
+  font-family: $fontFamily;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: $color-text;
+}
+.card_button {
+  border: 2px solid $primary-color;
+  border-radius: 100px;
+  padding: 15px 45px;
+  width: 187px;
+  height: 52px;
+  background: $color-link-hover;
+}
+.our-friends_button {
+  border: 1px solid $primary-color;
+  border-radius: 100px;
+  padding: 15px 45px;
+  width: 270px;
+  height: 52px;
+  background: $primary-color;
+  font-family: $fontFamily;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-link-hover;
+  &:hover {
+        cursor: pointer;
+        background: $primary-light-color;
+    }
+}

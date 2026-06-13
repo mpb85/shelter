@@ -1,0 +1,57 @@
+%ic {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class*="_icon-"] {
+  &:before {
+    @extend %ic;
+    display: block;
+  }
+}
+
+._icon-credit-card:before {
+  font-size: 1.5rem;
+  content: "\e900";
+}
+._icon-location:before {
+  font-size: 2.06rem;
+  content: "\e901";
+}
+._icon-mail:before {
+  font-size: 2.06rem;
+  content: "\e902";
+}
+._icon-pagination-arrow-left:before {
+  content: "\e903";
+}
+._icon-pagination-arrow-right:before {
+  content: "\e904";
+}
+._icon-pagination-double-arrow-left:before {
+  content: "\e905";
+}
+._icon-pagination-double-arrow-right:before {
+  content: "\e906";
+}
+._icon-phone:before {
+  font-size: 2.06rem;
+  content: "\e907";
+}
+._icon-slider-arrow-left:before {
+    font-size: 0.42rem;
+    content: "\e908";
+}
+._icon-slider-arrow-right:before {
+  font-size: 0.42rem;
+  content: "\e909";
+}
+._icon-vector:before {
+  content: "\e90a";
+}

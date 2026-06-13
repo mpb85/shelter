@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shelter</title>
     <link rel="stylesheet" href="sass/style.css" />
+
   </head>
   <body>
     <div class="wrapper">
@@ -18,24 +19,17 @@
                     <nav class="header__menu menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu_link">About the shelter</a>
-                            </li>
-                        </ul>
-                        <ul class="menu__list">
+                                <a href="#" class="menu_link link-active">About the shelter</a>
+                            </li> 
                             <li class="menu__item">
                                 <a href="#" class="menu_link">Our pets</a>
                             </li>
-                        </ul>
-                        <ul class="menu__list">
                             <li class="menu__item">
                                 <a href="#" class="menu_link">Help the shelter</a>
                             </li>
-                        </ul>
-                        <ul class="menu__list">
                             <li class="menu__item">
                                 <a href="#" class="menu_link">Contacts</a>
-                            </li>
-                        </ul>
+                            </li>                       
                     </nav>
                     <div class="nav__hamburger">
                         <span class="hamburger__line"></span>
@@ -56,7 +50,9 @@
                         </p>
                         <button>Make a friend</button>
                     </div>
-                    <div class="not-only_img"></div>
+                    <div class="not-only_img">
+                        <img src="./../../assets/images/notOnly-puppy.png" alt="">
+                    </div>
                 </div>
             </section>
             <section class="about">
@@ -81,81 +77,83 @@
             </section>
             <section class="our-friends">
                 <div class="our-friends__container">
-                    <h2>Our friends who are looking for a house</h2>
+                    <h2>Our friends who<span>are looking for a house</span></h2>
                     <div class="our-friends__slider">
-                        <span>left</span>
+                        <span class="_icon-slider-arrow-left slider-arrow"></span>
                         <div class="slider__cards">
                             <article class="card">
-                                <img src="" alt="cat">
-                                <p class="carn_name">Katrine</p>
-                                <button>Learn more</button>
+                                <img src="./../../assets/images/pets/pets-katrine.jpg" alt="British Shorthair-style cat on white background">
+                                <p class="card_name">Katrine</p>
+                                <button class="card_button button">Learn more</button>
                             </article>
                             <article class="card">
-                                <img src="" alt="little dog">
-                                <p class="carn_name">Jennifer</p>
-                                <button>Learn more</button>
+                                <img src="./../../assets/images/pets/pets-jennifer.jpg" alt="Fluffy cream-colored puppy sitting">
+                                <p class="card_name">Jennifer</p>
+                                <button class="card_button button">Learn more</button>
                             </article>
                             <article class="card">
-                                <img src="" alt="dog">
-                                <p class="carn_name">Woody</p>
-                                <button>Learn more</button>
+                                <img src="./../../assets/images/pets/pets-woody.jpg" alt="Happy Golden Retriever dog on white background">
+                                <p class="card_name">Woody</p>
+                                <button class="card_button button">Learn more</button>
                             </article>
                         </div>
-                        <span>right</span>
+                        <span class="_icon-slider-arrow-right slider-arrow"></span>
                     </div>
-                    <button>Get to know the rest</button>
+                    <button class="button our-friends_button">Get to know the rest</button>
                 </div>
             </section>
             <section class="help">
                 <div class="help__container">
-                    <h2>How you can help our shelter</h2>
+                    <h2>How you can help<span>our shelter</span></h2>
                     <div class="help__list-items">
                         <article class="help_item">
-                            <img src="" alt="">
+                            <img src="./../../assets/images/items-help/bank.svg" alt="">
                             <p>Pet food</p>
                         </article>
                          <article class="help_item">
-                            <img src="" alt="">
+                            <img src="./../../assets/images/items-help/car.svg" alt="">
                             <p>Transportation</p>
                         </article>
                          <article class="help_item">
-                            <img src="" alt="">
+                            <img src="./../../assets/images/items-help/toys.svg" alt="">
                             <p>Toys</p>
                         </article>
                          <article class="help_item">
-                            <img src="" alt="">
+                            <img src="./../../assets/images/items-help/bowls.svg" alt="">
                             <p>Bowls and cups</p>
                         </article>
                          <article class="help_item">
-                            <img src="" alt="">
+                            <img src="./../../assets/images/items-help/shampoos.svg" alt="">
                             <p>Shampoos</p>
                         </article>
                          <article class="help_item">
-                            <img src="" alt="">
+                            <img src="./../../assets/images/items-help/vitamins.svg" alt="">
                             <p>Vitamins</p>
                         </article>
                          <article class="help_item">
-                            <img src="" alt="">
+                            <img src="./../../assets/images/items-help/medicines.svg" alt="">
                             <p>Medicines</p>
                         </article>
                          <article class="help_item">
-                            <img src="" alt="">
-                            <p>Medicines</p>
+                            <img src="./../../assets/images/items-help/collars.svg" alt="">
+                            <p>Collars / leashes</p>
                         </article>
                          <article class="help_item">
-                            <img src="" alt="">
+                            <img src="./../../assets/images/items-help/cabin.svg" alt="">
                             <p>Sleeping areas</p>
                         </article>
                     </div>
                 </div>
             </section>
-            <section class="donation">
-                <div class="donation__container">
-                    <img src="" alt="">
-                    <div class="donation__content">
-                        <h2>You can also make a donation</h2>
+            <section class="inAddition">
+                <div class="inAddition__container">
+                    <div class="inAddition_img "></div>
+                    <div class="inAddition__content ">
+                        <h2>You can also<span>make a donation</span></h2>
                         <p>Name of the bank / Type of bank account</p>
-                        <button>8380 2880 8028 8791 7435</button>
+                        <a href="#">
+                            <button ><span class="_icon-credit-card"></span>8380 2880 8028 8791 7435</button>
+                        </a>                        
                         <h4>Legal information and lorem ipsum dolor sit amet,
                              consectetur adipiscing elit. Maecenas a ipsum at
                               libero sagittis dignissim sed ac diam. Praesent 
@@ -181,7 +179,7 @@
                     </div>
                 </div>
                 <div class="footer_img">
-                    <img src="" alt="">
+                    <img src="./../../assets/images/footer-puppy.svg" alt="">
                 </div>                
             </div>
         </footer>

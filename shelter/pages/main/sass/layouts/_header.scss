@@ -1,0 +1,59 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 2rem;
+  left: 0;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  h1 {
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: $primary-color;
+  }
+  p {
+    font-family: $secondFamily;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: $background-color;
+  }
+}
+.navigation__body {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+  gap: 2.1875rem;
+}
+.menu__item {
+}
+.menu_link {
+  font-family: $secondFamily;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: $color-link;
+}
+.link-active {
+  padding-block-end: 5px;
+  color: $color-link-hover;
+  border-bottom: 2px solid $primary-color;
+  pointer-events: none;
+}
+.nav__hamburger {
+}
+.hamburger__line {
+}

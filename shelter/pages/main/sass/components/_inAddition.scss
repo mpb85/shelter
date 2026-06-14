@@ -3,22 +3,23 @@
 }
 .inAddition__container {
   display: flex;
-  justify-content: center;
-  gap: 1.875rem;
-  padding-block: 5rem 6.25rem;
+ // justify-content: center;
+ // gap: 99px;
+  padding-block: 4rem 6.9rem;
 }
 .inAddition_img {
   background: url("./../../../assets/images/donation-dog.svg") no-repeat
     center / contain;
-  width: 42%;
-  //flex-basis: calc(52% - 0.625rem);
+    width: 40.5%;
+    margin-inline-start: 158px;
 }
+
 .inAddition__content {
-  //flex-basis: calc(42% - 0.625rem);
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 20px;
+  padding-inline-start: 34px;
+  gap: 1.25rem;
   h2 {
     font-family: $fontFamily;
     font-weight: 400;
@@ -29,6 +30,9 @@
     span {
       display: block;
     }
+  }
+  a {
+    pointer-events: none;
   }
   p {
     font-family: $fontFamily;
@@ -41,19 +45,18 @@
   button {
     display: flex;
     gap:  .8rem;
-    border: 1px solid $primary-color;
-    border-radius: 9px;
-    padding-inline: .3125rem;
+    border: .0625rem solid $primary-color;
+    border-radius: .5625rem;
+    padding-inline: 1.2rem;
     padding-block: .5rem;
-   // padding: .625rem .8rem;
-    width: 375px;
-    height: 43px;
+    width: 23.5rem;
+    height: 2.6875rem;
     background: $primary-color;
     font-family: $fontFamily;
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 115%;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.09em;
     color: $color-text;
     &:hover {
         cursor: pointer;

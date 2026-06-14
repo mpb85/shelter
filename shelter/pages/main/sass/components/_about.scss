@@ -2,33 +2,38 @@
 }
 .about__container {
   display: flex;
-  justify-content: space-between;
-  gap: 7.5rem;
-  padding-block: 5.875rem 7.125rem;
+  //justify-content: space-between;
+ // gap: 7.5rem;
+  padding-block: 5.1rem 6.7rem;
 }
 .about_img {
   background: url("./../../../assets/images/about-pets.png") no-repeat center /
     contain;
-    width: 100%;
+    width: 40%;
+    padding-inline-start: 7.8rem;
+    margin-inline-start: 3.5rem;
 }
 .about__content {  
   display: flex;
   flex-direction: column;
-  gap: 1.5625rem;
+  padding-block-start: 1rem;
+  gap: 1.59rem;
+  width: 57%;
+  padding-block-end: 1rem;
   h2 {
-    width: 22rem;
+    width: 25rem;
     font-family: $fontFamily;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 2.33rem;
     line-height: 130%;
     letter-spacing: 0.06em;
     color: $color-text;
   }
   p {
-    width: 26.875rem;
+    width: 28.5rem;
     font-family: $secondFamily;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 160%;
     color: $color-title-text;
   }

@@ -369,18 +369,22 @@ body {
 }
 
 ._icon-pagination-arrow-left:before {
+  font-size: 0.625rem;
   content: "\e903";
 }
 
 ._icon-pagination-arrow-right:before {
+  font-size: 0.625rem;
   content: "\e904";
 }
 
 ._icon-pagination-double-arrow-left:before {
+  font-size: 0.625rem;
   content: "\e905";
 }
 
 ._icon-pagination-double-arrow-right:before {
+  font-size: 0.625rem;
   content: "\e906";
 }
 
@@ -439,7 +443,7 @@ body {
   flex-direction: column;
   gap: 0.8rem;
 }
-.header__logo > h2 {
+.header__logo > h1 {
   font-family: "Georgia";
   font-weight: 400;
   font-size: 2rem;
@@ -600,6 +604,9 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
 }
+.our-friends_label span {
+  display: block;
+}
 
 .our-friends__cards {
   display: flex;
@@ -655,7 +662,6 @@ body {
 }
 
 ._icon-pagination-left-double-arrow {
-  font-size: 10px;
   color: #cdcdcd;
 }
 

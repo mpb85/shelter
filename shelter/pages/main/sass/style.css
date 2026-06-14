@@ -404,18 +404,22 @@ body {
 }
 
 ._icon-pagination-arrow-left:before {
+  font-size: 0.625rem;
   content: "\e903";
 }
 
 ._icon-pagination-arrow-right:before {
+  font-size: 0.625rem;
   content: "\e904";
 }
 
 ._icon-pagination-double-arrow-left:before {
+  font-size: 0.625rem;
   content: "\e905";
 }
 
 ._icon-pagination-double-arrow-right:before {
+  font-size: 0.625rem;
   content: "\e906";
 }
 
@@ -616,7 +620,7 @@ body {
   color: #cdcdcd;
   width: 31.5rem;
 }
-.not-only__content button {
+.not-only__content a {
   border-radius: 6.25rem;
   border: 0.0625rem solid #f1cdb3;
   padding: 0.98rem 2.92rem;
@@ -627,7 +631,7 @@ body {
   letter-spacing: 0.06em;
   background-color: #f1cdb3;
 }
-.not-only__content button:hover {
+.not-only__content a:hover {
   cursor: pointer;
   background: #fddcc4;
 }
@@ -769,12 +773,10 @@ body {
   color: #292929;
 }
 
-.our-friends_button {
+.our-friends_link {
   border: 1px solid #f1cdb3;
   border-radius: 100px;
   padding: 15px 45px;
-  width: 270px;
-  height: 52px;
   background: #f1cdb3;
   font-family: "Georgia";
   font-weight: 400;
@@ -783,7 +785,7 @@ body {
   letter-spacing: 0.06em;
   color: #292929;
 }
-.our-friends_button:hover {
+.our-friends_link:hover {
   cursor: pointer;
   background: #fddcc4;
 }
@@ -821,7 +823,7 @@ body {
   gap: 1.875rem;
   align-items: center;
 }
-.help_item p {
+.help_item h3 {
   font-family: "Georgia";
   font-weight: 400;
   font-size: 20px;
@@ -896,7 +898,8 @@ body {
   cursor: pointer;
   background: #fddcc4;
 }
-.inAddition__content h4 {
+.inAddition__content p:last-child {
+  display: block;
   font-family: "Arial";
   font-style: italic;
   font-weight: 400;
@@ -905,5 +908,15 @@ body {
   color: #b2b2b2;
   width: 23.75rem;
 }
+
+/* .inAddition_subtext {
+  font-family: $secondFamily;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #b2b2b2;
+  width: 23.75rem;
+} */
 
 /*# sourceMappingURL=style.css.map */

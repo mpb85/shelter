@@ -17,6 +17,9 @@
     line-height: 130%;
     letter-spacing: 0.06em;
     color: $color-text;
+    span {
+        display: block;
+    }
 }
 .our-friends__cards {
     display: flex;
@@ -70,7 +73,7 @@
     border-color: $color-link;
 }
 ._icon-pagination-left-double-arrow {
-    font-size: 10px;
+   // font-size: 10px;
     color: $color-link;
     
 }

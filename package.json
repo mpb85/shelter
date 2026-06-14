@@ -1,0 +1,26 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "main": "sass --watch shelter/pages/main/sass/style.scss shelter/pages/main/sass/style.css",
+    "pets": "sass --watch shelter/pages/pets/sass/style.scss shelter/pages/pets/sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpb85/shelter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpb85/shelter/issues"
+  },
+  "homepage": "https://github.com/mpb85/shelter#readme",
+  "devDependencies": {
+    "chokidar": "^3.6.0",
+    "sass": "^1.101.0"
+  }
+}

@@ -1,0 +1,75 @@
+.inAddition {
+  background: $background-secendory-color;
+}
+.inAddition__container {
+  display: flex;
+ // justify-content: center;
+ // gap: 99px;
+  padding-block: 4rem 6.9rem;
+}
+.inAddition_img {
+  background: url("./../../../assets/images/donation-dog.svg") no-repeat
+    center / contain;
+    width: 40.5%;
+    margin-inline-start: 158px;
+}
+
+.inAddition__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-inline-start: 34px;
+  gap: 1.25rem;
+  h2 {
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-text;
+    span {
+      display: block;
+    }
+  }
+  a {
+    pointer-events: none;
+  }
+  p {
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: $color-text;
+  }
+  button {
+    display: flex;
+    gap:  .8rem;
+    border: .0625rem solid $primary-color;
+    border-radius: .5625rem;
+    padding-inline: 1.2rem;
+    padding-block: .5rem;
+    width: 23.5rem;
+    height: 2.6875rem;
+    background: $primary-color;
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.09em;
+    color: $color-text;
+    &:hover {
+        cursor: pointer;
+        background: $primary-light-color;
+    }
+  }
+  h4 {
+    font-family: $secondFamily;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #b2b2b2;
+    width: 23.75rem;
+  }
+}

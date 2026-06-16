@@ -839,7 +839,7 @@ body {
 
 .inAddition__container {
   display: flex;
-  padding-block: 4rem 6.9rem;
+  padding-block: 4rem 6.8rem;
 }
 
 .inAddition_img {
@@ -877,15 +877,13 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
 }
-.inAddition__content button {
+.inAddition__content a {
   display: flex;
   gap: 0.8rem;
   border: 0.0625rem solid #f1cdb3;
   border-radius: 0.5625rem;
   padding-inline: 1.2rem;
   padding-block: 0.5rem;
-  width: 23.5rem;
-  height: 2.6875rem;
   background: #f1cdb3;
   font-family: "Georgia";
   font-weight: 400;
@@ -894,7 +892,7 @@ body {
   letter-spacing: 0.09em;
   color: #545454;
 }
-.inAddition__content button:hover {
+.inAddition__content a:hover {
   cursor: pointer;
   background: #fddcc4;
 }
@@ -906,7 +904,8 @@ body {
   font-size: 12px;
   line-height: 150%;
   color: #b2b2b2;
-  width: 23.75rem;
+  width: 24.9rem;
+  letter-spacing: 0.001em;
 }
 
 /* .inAddition_subtext {

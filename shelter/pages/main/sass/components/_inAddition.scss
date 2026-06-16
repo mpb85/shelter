@@ -3,9 +3,7 @@
 }
 .inAddition__container {
   display: flex;
-  // justify-content: center;
-  // gap: 99px;
-  padding-block: 4rem 6.9rem;
+  padding-block: 4rem 6.8rem;
 }
 .inAddition_img {
   background: url("./../../../assets/images/donation-dog.svg") no-repeat
@@ -42,15 +40,13 @@
     letter-spacing: 0.06em;
     color: $color-text;
   }
-  button {
+  a {
     display: flex;
     gap: 0.8rem;
     border: 0.0625rem solid $primary-color;
     border-radius: 0.5625rem;
     padding-inline: 1.2rem;
     padding-block: 0.5rem;
-    width: 23.5rem;
-    height: 2.6875rem;
     background: $primary-color;
     font-family: $fontFamily;
     font-weight: 400;
@@ -71,7 +67,8 @@
     font-size: 12px;
     line-height: 150%;
     color: #b2b2b2;
-    width: 23.75rem;
+    width: 24.9rem;
+    letter-spacing: 0.001em;
   }
 }
 /* .inAddition_subtext {

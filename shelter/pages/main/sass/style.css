@@ -321,7 +321,6 @@ html,
 body {
   height: 100%;
   font-size: 15px;
-  background: url("./../../../assets/images/shelter-bg.png");
   line-height: 1;
   min-width: 20rem;
   scroll-behavior: smooth;
@@ -458,7 +457,7 @@ body {
 
 [class*=__container] {
   max-width: 80rem;
-  padding: 0 2.5rem;
+  padding: 0 clamp(1.875rem, 0.7639rem + 2.3148vw, 2.5rem);
   margin: 0 auto;
 }
 
@@ -596,6 +595,20 @@ body {
   padding-block-start: 12rem;
   gap: 1.9rem;
 }
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+  .not-only__container {
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 0;
+  }
+}
+@media (max-width: 768px) {
+  .not-only__container {
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 0;
+  }
+}
 
 .not-only__content {
   padding-block-start: 10.9rem;
@@ -603,6 +616,33 @@ body {
   flex-direction: column;
   align-items: start;
   gap: 2.75rem;
+}
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+  .not-only__content :nth-child(3) {
+    align-self: center;
+  }
+}
+@media (max-width: 768px) {
+  .not-only__content :nth-child(3) {
+    align-self: center;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+  .not-only__content {
+    padding-inline-start: 0.3125rem;
+    padding-block-start: 10rem;
+  }
+  .not-only__content a {
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .not-only__content {
+    padding-block-start: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .not-only__content h2 {
   font-family: "Georgia";
@@ -638,6 +678,37 @@ body {
 
 .not-only_label {
   font-family: "Georgia";
+}
+
+.not-only_img {
+  width: 100%;
+}
+.not-only_img img {
+  max-width: 100%;
+}
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+  .not-only_img {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-block-start: 5rem;
+  }
+  .not-only_img img {
+    max-width: clamp(80%, 1vw + 75%, 85%);
+  }
+}
+@media (max-width: 768px) {
+  .not-only_img {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-block-start: 5rem;
+  }
+  .not-only_img img {
+    max-width: 80%;
+  }
 }
 
 .about__container {

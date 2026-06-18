@@ -7,6 +7,17 @@
   display: flex;
   padding-block-start: 12rem;
   gap: 1.9rem;
+
+  @include media-laptop {
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 0;
+  }
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 0;
+  }
 }
 .not-only__content {
   padding-block-start: 10.9rem;
@@ -14,6 +25,27 @@
   flex-direction: column;
   align-items: start;
   gap: 2.75rem;
+  & :nth-child(3) {
+    @include media-laptop {
+      align-self: center;
+    }
+    @include media-tablet {
+      align-self: center;
+    }
+  }
+  @include media-laptop {
+    padding-inline-start: 0.3125rem;
+    padding-block-start: 10rem;
+    a {
+      margin: auto;
+    }
+  }
+  @include media-tablet {
+    padding-block-start: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   h2 {
     font-family: $fontFamily;
     font-weight: 400;
@@ -32,8 +64,8 @@
   }
   a {
     border-radius: 6.25rem;
-    border: .0625rem solid $primary-color;
-    padding: .98rem 2.92rem;
+    border: 0.0625rem solid $primary-color;
+    padding: 0.98rem 2.92rem;
     font-family: $fontFamily;
     font-weight: 400;
     font-size: 1.13rem;
@@ -41,14 +73,37 @@
     letter-spacing: 0.06em;
     background-color: $primary-color;
     &:hover {
-        cursor: pointer;
-        background: $primary-light-color;
+      cursor: pointer;
+      background: $primary-light-color;
     }
-    
   }
 }
 .not-only_label {
   font-family: $fontFamily;
 }
 .not-only_img {
+  width: 100%;
+  img {
+    max-width: 100%;
+  }
+  @include media-laptop {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-block-start: 5rem;
+    img {
+      max-width: clamp(80%, 1vw + 75%, 85%);
+    }
+  }
+  @include media-tablet {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-block-start: 5rem;
+    img {
+      max-width: 80%;
+    }
+  }
 }

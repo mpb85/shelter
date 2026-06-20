@@ -6,7 +6,12 @@
   align-items: center;
   padding-block: 5.9rem 7.9rem;
   gap: 3.75rem;
-  
+   @include media-laptop {
+    padding-block: 5.4rem 6.2rem;
+  }
+  @include media-tablet {
+     padding-block: 5.4rem 6.2rem;
+  }
   h2 {
     font-family: $fontFamily;
     font-weight: 400;
@@ -25,6 +30,17 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 4.1rem 7.98rem;
+  @include media-laptop {
+    gap: 4.1rem 7.98rem;
+  }
+  @include media-tablet {
+    gap: 3.9rem 4rem;
+    width: 42rem;
+    justify-content: start;
+    article {
+      width: 170px;
+    }
+  }
 }
 .help_item {
   display: flex;

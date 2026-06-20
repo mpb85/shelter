@@ -8,18 +8,50 @@
   display: flex;
   gap: 10.5rem;
   padding-block-start: 2.8rem;
+  @include media-PC {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding-block-start: 2rem;
+  }
+  @include media-laptop {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding-block-start: 2rem;
+  }
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.4rem;
+    padding-block-start: 2rem;
+  }
 }
 .footer__content {
   display: flex;
   gap: 10.3rem;
   padding-block: 1.04rem 5rem;
-  
+   @include media-laptop {
+    gap: 60px;
+  }
+  @include media-tablet {
+    gap: 0;
+    align-items: center;
+    padding-block: 0;
+  }
 }
 .footer__contacts {
   display: flex;
   flex-direction: column;
   gap: 2.9rem;
   max-width: 19rem;
+  @include media-laptop {
+
+  }
+  @include media-tablet {
+    max-width: 20rem;
+    padding-inline-start: 1rem;
+  }
   h2 {
     font-family: $fontFamily;
     font-weight: 400;
@@ -52,6 +84,13 @@
   flex-direction: column;
   gap: 2.2rem;
   max-width: 22rem;
+  @include media-laptop {
+
+  }
+  @include media-tablet {
+    max-width: 21rem;
+    padding-inline-start: 35px;
+  }
   h2 {
     font-family: $fontFamily;
     font-weight: 400;

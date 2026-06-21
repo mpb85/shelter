@@ -20,9 +20,12 @@
 }
             //624px - 320px
 @mixin media-minmobile {
-    @media only screen and (min-width: 321px) and (max-width: 624px) { @content; }
+    @media only screen and (min-width: 321px) and (max-width: 720px) { @content; }
 }
-
+            //460px - 320px
+@mixin media-iphone-xs {
+    @media only screen and (min-width: 321px) and (max-width: 460px) { @content; }
+}
         // 320px
 @mixin media-mobilesmall {
     @media (max-width: $mobile-small-widht) { @content; }

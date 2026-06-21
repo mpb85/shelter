@@ -6,7 +6,22 @@
   align-items: center;
   padding-block: 5.9rem 7.9rem;
   gap: 3.75rem;
-  
+   @include media-laptop {
+    padding-block: 5.4rem 6.2rem;
+  }
+  @include media-tablet {
+     padding-block: 5.4rem 6.2rem;
+  }
+   @include media-mobile {
+    padding-inline: clamp(0.625rem, calc(-0.29rem + 4.485vw), 1.875rem);
+    padding-block: 2.8rem 6.2rem;
+    gap: 41px;
+  }
+  @include media-mobilesmall {
+    padding-inline: clamp(0.625rem, calc(-0.29rem + 4.485vw), 1.875rem);
+    padding-block: 2.8rem 6.2rem;
+    gap: 41px;
+  }
   h2 {
     font-family: $fontFamily;
     font-weight: 400;
@@ -15,6 +30,12 @@
     letter-spacing: 0.06em;
     text-align: center;
     color: $color-text;
+    @include media-mobile {
+      font-size: clamp(1.67rem, calc(1.115rem + 2.237vw), 2.19rem);
+    }
+    @include media-mobilesmall {
+      font-size: clamp(1.67rem, calc(1.115rem + 2.237vw), 2.19rem);
+    }
   }
   span {
     display: block;
@@ -25,12 +46,59 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 4.1rem 7.98rem;
+  @include media-laptop {
+    gap: 4.1rem 7.98rem;
+  }
+  @include media-tablet {
+    gap: 3.9rem 4rem;
+    width: 42rem;
+    justify-content: start;
+    article {
+      width: 170px;
+    }
+  }
+  @include media-minmobile {
+    width: clamp(17.813rem, calc(0.497rem + 86.577vw), 42rem);
+    gap: 2.1rem 2.1rem;
+    article {
+      width: 8.4rem;
+      justify-content: space-between;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      h3 {
+        font-size: clamp(1rem, calc(0.714rem + 1.119vw), 1.25rem);
+      }
+    }
+  }
+  @include media-mobilesmall {
+    width: clamp(17.813rem, calc(0.497rem + 86.577vw), 42rem);
+    gap: 2.1rem 2.1rem;
+    article {
+      width: 8.4rem;
+      justify-content: space-between;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      h3 {
+        font-size: clamp(1rem, calc(0.714rem + 1.119vw), 1.25rem);
+      }
+    }
+  }
 }
 .help_item {
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
   align-items: center;
+  @include media-mobile {
+    gap: 19px;
+  }
+  @include media-mobilesmall {
+    gap: 19px;
+  }
   h3 {
     font-family: $fontFamily;
     font-weight: 400;

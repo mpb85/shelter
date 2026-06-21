@@ -1,6 +1,6 @@
 //-------------------------------Colors---------------------------------
 
-$bg-gradient: url('./../../../assets/images/shelter-bg.png');
+//$bg-gradient: url('./../../../assets/images/shelter-bg.png');
 $background-color: #fff;                //--------------color-light-xl
 $background-secendory-color: #f6f6f6;   //--------------color-light-l
 $primary-color: #f1cdb3;                //--------------color-primary
@@ -24,8 +24,8 @@ $fontSize: 0.9375rem;
 $maxWidth: 80rem;
 $minWidth: 20rem;
 $maxWidthContainer: 75rem;
-$containerPadding: 2.5rem;
-$containerWidth: $maxWidthContainer + $containerPadding;
+$containerPadding: clamp(1.875rem, 0.7639rem + 2.3148vw, 2.5rem);
+$containerWidth: calc(#{$maxWidthContainer} + #{$containerPadding});
 
 //--------------------------------Media----------------------------------
 $content-leptop: 1999.98px;

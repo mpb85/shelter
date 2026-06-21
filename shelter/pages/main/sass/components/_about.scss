@@ -2,24 +2,75 @@
 }
 .about__container {
   display: flex;
-  //justify-content: space-between;
- // gap: 7.5rem;
   padding-block: 5.1rem 6.7rem;
+  @include media-laptop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+  @include media-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5rem;
+    padding-block: 4.1rem 6.7rem;
+  }
+  @include media-mobile {
+    padding-inline: clamp(0.625rem, calc(-0.29rem + 4.485vw), 1.875rem);
+    padding-block: 1.99rem 2.83rem;
+    gap: 0;
+  }
+  @include media-mobilesmall {
+    padding-inline: clamp(0.625rem, calc(-0.29rem + 4.485vw), 1.875rem);
+    padding-block: 1.99rem 2.83rem;
+    gap: 0;
+  }
 }
 .about_img {
   background: url("./../../../assets/images/about-pets.png") no-repeat center /
     contain;
-    width: 40%;
-    padding-inline-start: 7.8rem;
-    margin-inline-start: 3.5rem;
+  width: 40%;
+  padding-inline-start: 7.8rem;
+  margin-inline-start: 3.5rem;
+  @include media-laptop {
+    order: 2;
+    height: 27.5rem;
+  }
+  @include media-tablet {
+    order: 2;
+    height: 27.5rem;
+    margin-inline-start: 0;
+  }
+  @include media-mobile {
+
+  }
+  @include media-mobilesmall {
+    height: 26.5rem;
+    width: 47%;
+  }
 }
-.about__content {  
+.about__content {
   display: flex;
   flex-direction: column;
   padding-block-start: 1rem;
   gap: 1.59rem;
   width: 57%;
   padding-block-end: 1rem;
+  @include media-laptop {
+    order: 1;
+    width: 65%;
+  }
+  @include media-tablet {
+    order: 1;
+    width: 61%;
+  }
+  @include media-mobile {
+    width: 98%;
+  }
+  @include media-mobilesmall {
+    width: 98%;
+  }
   h2 {
     width: 25rem;
     font-family: $fontFamily;
@@ -28,6 +79,18 @@
     line-height: 130%;
     letter-spacing: 0.06em;
     color: $color-text;
+    @include media-mobile {
+      font-size: clamp(1.668rem, calc(1.115rem + 2.237vw), 2.19rem);
+      width: 19.6rem;
+      text-align: center;
+      letter-spacing: 0.06em;
+    }
+    @include media-mobilesmall {
+      font-size: clamp(1.668rem, calc(1.115rem + 2.237vw), 2.19rem);
+      width: 19.6rem;
+      text-align: center;
+      letter-spacing: 0.06em;
+    }
   }
   p {
     width: 28.5rem;
@@ -36,5 +99,15 @@
     font-size: 1rem;
     line-height: 160%;
     color: $color-title-text;
+    @include media-mobile {
+      padding-inline: 0.8rem;
+      width: clamp(17.188rem, calc(0.319rem + 84.081vw), 40.625rem);
+      text-align: justify;
+    }
+    @include media-mobilesmall {
+      padding-inline: 0.8rem;
+      width: 17.9rem;
+      text-align: justify;
+    }
   }
 }

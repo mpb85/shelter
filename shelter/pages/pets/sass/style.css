@@ -834,7 +834,8 @@ body {
 @media (max-width: 320px) {
   .our-friends__container {
     padding-inline: clamp(0.667rem, -0.288rem + 4.474vw, 2rem);
-    padding-block: 2.85rem 105.6px;
+    padding-block: 2.85rem 2.888rem;
+    gap: 2.69rem;
   }
 }
 
@@ -893,17 +894,20 @@ body {
     display: none;
   }
 }
+@media (max-width: 320px) {
+  .our-friends__cards {
+    gap: 2.3rem;
+  }
+  .our-friends__cards div:nth-child(n+4) {
+    display: none;
+  }
+}
 
 .our-friends__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #fafafa;
-  /*  @include media-minmobile {
-       .container div:nth-child(n+4) {
-           display: none;
-   }
-   } */
 }
 .our-friends__card p {
   font-family: "Georgia";
@@ -933,6 +937,12 @@ body {
 @media (max-width: 768px) {
   .our-friends__navigation {
     padding-block-start: 0.7rem;
+  }
+}
+@media (max-width: 320px) {
+  .our-friends__navigation {
+    gap: 0.5625rem;
+    padding-block-start: 0;
   }
 }
 

@@ -6,6 +6,18 @@
     flex-direction: column;
     gap: 3.98rem;
     padding: 5.45rem 0 6.6rem 0;
+    @include media-tablet {
+        padding-block: 5.45rem  5.1rem ;
+        gap: 2rem;
+    }
+    @include media-mobile {
+        padding-inline: clamp(0.667rem, calc(-0.288rem + 4.474vw), 2rem);
+        padding-block: 2.85rem  105.6px ;
+    }
+    @include media-mobilesmall {
+        padding-inline: clamp(0.667rem, calc(-0.288rem + 4.474vw), 2rem);
+        padding-block: 2.85rem  105.6px ;
+    }
 }
 .our-friends_label {
     max-width: 27rem;
@@ -20,6 +32,9 @@
     span {
         display: block;
     }
+    @include media-mobilesmall {
+        font-size: clamp(1.67rem, calc(1.189rem + 2.237vw), 2.33rem);
+    }
 }
 .our-friends__cards {
     display: flex;
@@ -27,12 +42,37 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2.5rem;
+    @include media-PC {
+        justify-content: center;
+    }
+    @include media-laptop {
+        justify-content: center;
+    }
+    @include media-tablet {
+        row-gap: 2.15rem;
+        column-gap: 2.5rem;
+        justify-content: center;
+        div:nth-child(n+7) {
+         display: none;
+        }
+    }
+    @include media-minmobile {
+        gap: 2.3rem;
+        div:nth-child(n+4) {
+         display: none;
+        }
+    }
 }
 .our-friends__card {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: $color-link-hover;
+   /*  @include media-minmobile {
+        .container div:nth-child(n+4) {
+            display: none;
+    }
+    } */
     p {
         font-family: $fontFamily;
         font-weight: 400;
@@ -59,6 +99,9 @@
     gap: 1.25rem;
     margin: auto;
     align-items: center;
+    @include media-tablet {
+        padding-block-start: .7rem;
+    }
 }
 
 .button_navigation {

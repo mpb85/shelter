@@ -14,12 +14,12 @@
   }
    @include media-mobile {
     padding-inline: clamp(0.625rem, calc(-0.29rem + 4.485vw), 1.875rem);
-    padding-block: 2.8rem 6.2rem;
+    padding-block: 2.8rem 2.625rem;
     gap: 41px;
   }
   @include media-mobilesmall {
     padding-inline: clamp(0.625rem, calc(-0.29rem + 4.485vw), 1.875rem);
-    padding-block: 2.8rem 6.2rem;
+    padding-block: 2.8rem 2.625rem;
     gap: 41px;
   }
   h2 {

@@ -16,7 +16,8 @@
     }
     @include media-mobilesmall {
         padding-inline: clamp(0.667rem, calc(-0.288rem + 4.474vw), 2rem);
-        padding-block: 2.85rem  105.6px ;
+        padding-block: 2.85rem  2.888rem ;
+        gap: 2.69rem;
     }
 }
 .our-friends_label {
@@ -62,17 +63,18 @@
          display: none;
         }
     }
+    @include media-mobilesmall {
+        gap: 2.3rem;
+        div:nth-child(n+4) {
+         display: none;
+        }
+    }
 }
 .our-friends__card {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: $color-link-hover;
-   /*  @include media-minmobile {
-        .container div:nth-child(n+4) {
-            display: none;
-    }
-    } */
     p {
         font-family: $fontFamily;
         font-weight: 400;
@@ -101,6 +103,10 @@
     align-items: center;
     @include media-tablet {
         padding-block-start: .7rem;
+    }
+    @include media-mobilesmall {
+        gap: .5625rem;
+        padding-block-start: 0;
     }
 }
 

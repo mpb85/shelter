@@ -1,0 +1,54 @@
+@font-face {
+	font-family: 'Arial';
+	src: url('./../../../assets/fonts/Arial/arial-italic.eot');
+	src: local('Arial Italic'), local('arial-italic'),
+		url('arial-italic.eot?#iefix') format('embedded-opentype'),
+		url('arial-italic.woff') format('woff'),
+		url('arial-italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Arial';
+	src: url('./../../../assets/fonts/Arial/arial-regular.eot');
+	src: local('Arial'), local('arial-regular'),
+		url('arial-regular.eot?#iefix') format('embedded-opentype'),
+		url('arial-regular.woff') format('woff'),
+		url('arial-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('./../../../assets/fonts/Georgia/georgia-italic.eot');
+	src: local('Georgia Italic'), local('georgia-italic'),
+		url('georgia-italic.eot?#iefix') format('embedded-opentype'),
+		url('georgia-italic.woff') format('woff'),
+		url('georgia-italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('./../../../assets/fonts/Georgia/georgia-bold.eot');
+	src: local('Georgia Bold'), local('georgia-bold'),
+		url('georgia-bold.eot?#iefix') format('embedded-opentype'),
+		url('georgia-bold.woff') format('woff'),
+		url('georgia-bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('./../../../assets/fonts/Georgia/georgia-regular.eot');
+	src: local('Georgia'), local('georgia-regular'),
+		url('georgia-regular.eot?#iefix') format('embedded-opentype'),
+		url('georgia-regular.woff') format('woff'),
+		url('georgia-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

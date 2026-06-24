@@ -1,0 +1,34 @@
+//-------------------------------Colors---------------------------------
+
+//$bg-gradient: url('./../../../assets/images/shelter-bg.png');
+$background-color: #fff;                //--------------color-light-xl
+$background-secendory-color: #f6f6f6;   //--------------color-light-l
+$primary-color: #f1cdb3;                //--------------color-primary
+$primary-light-color: #fddcc4;          //--------------color-primary-light
+$color-link: #cdcdcd;                   //--------------color-dark-s
+$color-link-hover: #fafafa;             //--------------color-light-s
+$color-text: #545454;                   //--------------color-dark-l
+$color-dark-link-hover: #292929;        //--------------color-dark-3xl
+$color-title-text: #4c4c4c;             //--------------color-dark-xl
+$header-gradient-background:#211f20;    //--start-screen-gradient-background: 
+
+
+
+//-------------------------------Font Style-----------------------------
+$fontFamily: "Georgia";
+$secondFamily: "Arial";
+$fontSize: 0.9375rem; 
+
+
+//--------------------------------Wrapper-------------------------------
+$maxWidth: 80rem;
+$minWidth: 20rem;
+$maxWidthContainer: 75rem;
+$containerPadding: clamp(1.875rem, 0.7639rem + 2.3148vw, 2.5rem);
+$containerWidth: calc(#{$maxWidthContainer} + #{$containerPadding});
+
+//--------------------------------Media----------------------------------
+$content-leptop: 1999.98px;
+$tablet-widht: 768px;
+$mobile-big-widht: 414px;
+$mobile-small-widht: 320px;

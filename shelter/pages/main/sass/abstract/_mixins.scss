@@ -1,0 +1,32 @@
+@mixin media-HdPc {
+    @media only screen and (min-width: 1200px) and (max-width: 1400px) { @content; }
+}
+
+@mixin media-PC {
+    @media only screen and (min-width: 1024px) and (max-width: 1199.98px) { @content; }
+}
+
+         // 768px - 1023.98px
+@mixin media-laptop {
+    @media only screen and (min-width: 769px) and (max-width: 1080px) { @content; }
+}
+        //    768px
+@mixin media-tablet {
+    @media (max-width: $tablet-widht) { @content; }
+}
+            //767px - 320px
+@mixin media-mobile {
+    @media only screen and (min-width: 321px) and (max-width: 767.98px) { @content; }
+}
+            //720px - 320px
+@mixin media-minmobile {
+    @media only screen and (min-width: 321px) and (max-width: 720px) { @content; }
+}
+            //460px - 320px
+@mixin media-iphone-xs {
+    @media only screen and (min-width: 321px) and (max-width: 460px) { @content; }
+}
+        // 320px
+@mixin media-mobilesmall {
+    @media (max-width: $mobile-small-widht) { @content; }
+}

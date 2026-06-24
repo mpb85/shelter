@@ -1,0 +1,203 @@
+.footer {
+  background:
+    url(./../../../assets/images/noise_transparent@2x.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+}
+
+.footer__container {
+  display: flex;
+  gap: 10.5rem;
+  padding-block-start: 2.8rem;
+  @include media-PC {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding-block-start: 2rem;
+  }
+  @include media-laptop {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding-block-start: 2rem;
+  }
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.4rem;
+    padding-block-start: 2rem;
+  }
+    @include media-mobile {
+    padding-inline: clamp(0.625rem, calc(-0.29rem + 4.485vw), 1.875rem);
+    padding-block-start: 1.95rem;
+  }
+  @include media-mobilesmall {
+    padding-inline: clamp(0.625rem, calc(-0.29rem + 4.485vw), 1.875rem);
+    padding-block-start: 1.95rem;
+    gap: 40px;
+  }
+}
+.footer__content {
+  display: flex;
+  gap: 10.3rem;
+  padding-block: 1.04rem 5rem;
+   @include media-laptop {
+    gap: 60px;
+  }
+  @include media-tablet {
+    gap: 0;
+    align-items: center;
+    padding-block: 0;
+  }
+  @include media-mobile {
+    flex-direction: column;
+    gap: 2.7rem;
+  }
+  @include media-mobilesmall {
+   flex-direction: column;
+   gap: 2.7rem;
+  }
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.9rem;
+  max-width: 19rem;
+  @include media-laptop {
+
+  }
+  @include media-tablet {
+    max-width: 20rem;
+    padding-inline-start: 1rem;
+  }
+   @include media-mobile {
+     align-items: center;
+   padding-inline-start: 0;
+  }
+  @include media-mobilesmall {
+   align-items: center;
+   padding-inline-start: 0;
+  }
+  h2 {
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $background-color;
+    @include media-mobile {
+      font-size: clamp(1.67rem, calc(1.189rem + 2.237vw), 2.33rem);
+      text-align: center;
+    }
+    @include media-mobilesmall {
+      font-size: clamp(1.67rem, calc(1.189rem + 2.237vw), 2.33rem);
+      text-align: center;
+      
+    }
+  }
+  a {
+    display: flex;
+    gap: 1.25rem;
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $primary-color;
+  }
+}
+.footer_mail {
+}
+._icon-mail {
+}
+.footer_phone {
+}
+._icon-phone {
+}
+.footer__location {
+    display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  max-width: 22rem;
+  @include media-laptop {
+
+  }
+  @include media-tablet {
+    max-width: 21rem;
+    padding-inline-start: 35px;
+  }
+   @include media-mobile {
+     align-items: center;
+   padding-inline-start: 0;
+  }
+  @include media-mobilesmall {
+   align-items: center;
+   padding-inline-start: 0;
+   gap: 2.7rem;
+  }
+  h2 {
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $background-color;
+    @include media-mobile {
+      font-size: clamp(1.67rem, calc(1.189rem + 2.237vw), 2.33rem);
+      text-align: center;
+      width: clamp(17.333rem, calc(11.606rem + 26.846vw), 25.333rem);
+    }
+    @include media-mobilesmall {
+      font-size: clamp(1.67rem, calc(1.189rem + 2.237vw), 2.33rem);
+      text-align: center;
+      width: clamp(17.333rem, calc(11.606rem + 26.846vw), 25.333rem);
+    }
+  }
+  a {
+    display: flex;
+    gap: 1.25rem;
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $primary-color;
+    @include media-mobile {
+       width: 20rem;
+      gap: 0;
+      span {
+        padding-inline-end: 1.25rem;
+      }
+    }
+    @include media-mobilesmall {
+      width: 20rem;
+      gap: 0;
+      span {
+        padding-inline-end: 1.25rem;
+      }
+   }
+  }
+}
+.footer__locations_adress1 {
+  display: flex;
+  align-items: center;
+}
+._icon-location {
+}
+.footer__locations_adress2 {
+}
+.footer_img {
+  @include media-mobile {
+    display: flex;
+    justify-content: space-around;
+    img {
+      width: 86%;
+    }
+  }
+  @include media-mobilesmall {
+    display: flex;
+    justify-content: space-around;
+    img {
+      width: 86%;
+    }
+  }
+}

@@ -1,0 +1,163 @@
+.inAddition {
+  background: $background-secendory-color;
+}
+.inAddition__container {
+  display: flex;
+  padding-block: 4rem 6.8rem;
+   @include media-laptop {
+    flex-direction: column;
+    align-items: center;
+    padding-block: 5.8rem 3.05rem;
+  }
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+    padding-block: 5.8rem 3.05rem;
+  }
+   @include media-mobile {
+    padding-inline: clamp(0.625rem, calc(-0.29rem + 4.485vw), 1.875rem);
+     padding-block: 2.85rem .375rem;
+  }
+  @include media-mobilesmall {
+    padding-inline: clamp(0.625rem, calc(-0.29rem + 4.485vw), 1.875rem);
+    padding-block: 2.85rem .375rem;
+  }
+}
+.inAddition_img {
+  background: url("./../../../assets/images/donation-dog.svg") no-repeat
+    center / contain;
+  width: 40.5%;
+  margin-inline-start: 158px;
+   @include media-laptop {
+    order: 2;
+    height: 23.75rem;
+    margin-inline-start: 0;
+    width: 70%;
+  }
+  @include media-tablet {
+    order: 2;
+    height: 25rem;
+    margin-inline-start: 0;
+    width: 71%;
+  }
+  @include media-mobile {
+     height: 14rem;
+     width: 87%;
+  }
+  @include media-mobilesmall {
+    height: 14rem;
+    width: 87%;
+  }
+}
+
+.inAddition__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-inline-start: 34px;
+  gap: 1.25rem;
+  @include media-laptop {
+    order: 1;
+    padding-inline-start: 0;
+    gap: 1.25rem;
+  }
+  @include media-tablet {
+    order: 1;
+    padding-inline-start: 0;
+    gap: 1.4rem;
+    margin-inline-start: -0.4375rem;
+  }
+  @include media-mobile {
+     align-items: center;
+  }
+  @include media-mobilesmall {
+    align-items: center;
+    gap: 1.6rem;
+  }
+  h2 {
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-text;
+    span {
+      display: block;
+    }
+    @include media-mobile {
+      font-size: clamp(1.67rem, calc(1.115rem + 2.237vw), 2.19rem);
+      text-align: center;
+    }
+    @include media-mobilesmall {
+      font-size: clamp(1.67rem, calc(1.115rem + 2.237vw), 2.19rem);
+      text-align: center;
+    }
+  }
+  a {
+    pointer-events: none;
+  }
+  p {
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: $color-text;
+    @include media-mobile {
+      letter-spacing: 0.003em;
+    }
+    @include media-mobilesmall {
+      letter-spacing: 0.003em;
+    }
+  }
+  a {
+    display: flex;
+    gap: 0.8rem;
+    border: 0.0625rem solid $primary-color;
+    border-radius: 0.5625rem;
+    padding-inline: 1.2rem;
+    padding-block: 0.5rem;
+    background: $primary-color;
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.09em;
+    color: $color-text;
+    &:hover {
+      cursor: pointer;
+      background: $primary-light-color;
+    }
+    @include media-mobile {
+      font-size: clamp(1.00rem, calc(0.761rem + 1.119vw), 1.33rem);
+      gap: 1rem;
+      padding-inline: 1rem;
+      letter-spacing: 0.048em;
+    }
+    @include media-mobilesmall {
+      font-size: clamp(1.00rem, calc(0.761rem + 1.119vw), 1.33rem);
+      gap: 1rem;
+      padding-inline: 1rem;
+      letter-spacing: 0.048em;
+    }
+  }
+  p:last-child {
+    display: block;
+    font-family: $secondFamily;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #b2b2b2;
+    width: 24.9rem;
+    letter-spacing: 0.001em;
+    @include media-mobile {
+      width: clamp(18.733rem, calc(14.009rem + 22.148vw), 25.333rem);
+      text-align: justify;
+    }
+    @include media-mobilesmall {
+      width: clamp(18.733rem, calc(14.009rem + 22.148vw), 25.333rem);
+      text-align: justify;
+    }
+  }
+}

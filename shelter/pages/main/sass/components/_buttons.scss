@@ -1,0 +1,43 @@
+.button {
+    display: inline-block;
+    background: $primary-color;
+    padding: .9375rem 2.8125rem;
+    border-radius: 6.25rem;
+    font-family: $fontFamily;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.08em;
+    color: $color-dark-link-hover;
+}
+.arrow {
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 6.25rem;
+    border: .125rem solid $primary-color;
+    color: $color-dark-link-hover;
+    text-align: center;
+    align-content: center;
+    &:hover {
+        cursor: pointer;
+        background: $primary-light-color;
+        border: .125rem solid $primary-light-color;
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

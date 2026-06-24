@@ -1,0 +1,23 @@
+@import "../../main/sass/abstract/constants";
+@import "../../main/sass/abstract/mixins";
+
+
+//base
+@import "../../main/sass/base/normalize";
+@import "../../main/sass/base/base";
+@import "../../main/sass/base/hamburger";
+
+//fonts
+@import "../../main/sass/fonts/fonts";
+@import "../../main/sass/fonts/icons";
+
+//layout
+@import "../../main/sass/layouts/wrapper";
+@import "layouts/header";
+@import "../../main/sass/layouts/footer";
+
+
+//components
+@import "../../main/sass/components/buttons";
+@import "components/ourFriends";
+@import "../../main/sass/components/_card.scss";

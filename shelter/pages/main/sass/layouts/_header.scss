@@ -87,9 +87,11 @@
   gap: 2.375rem;
   @include media-mobile{
     gap: 2.8rem;
+    z-index: 10;
   }
   @include media-mobilesmall {
     gap: 2.8rem;
+    z-index: 10;
   }
 }
 .menu__item {
@@ -143,6 +145,7 @@
 }
 .nav__hamburger {
   margin-block-start: 1.25rem;
+  z-index: 10;
 }
 
 .nav__hamburger.active .hamburger__line {
@@ -161,4 +164,22 @@
   transform: translate(0, 0) rotate(90deg);
 }
 .hamburger__line {
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* right: 0;
+  bottom: 0; */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 9; 
+  opacity: 0;
+  pointer-events: none; 
+  transition: opacity 0.3s ease; 
+}
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto; 
 }

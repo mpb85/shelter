@@ -603,11 +603,13 @@ body._lock {
 @media only screen and (min-width: 321px) and (max-width: 767.98px) {
   .menu__list {
     gap: 2.8rem;
+    z-index: 10;
   }
 }
 @media (max-width: 320px) {
   .menu__list {
     gap: 2.8rem;
+    z-index: 10;
   }
 }
 
@@ -670,6 +672,7 @@ body._lock {
 
 .nav__hamburger {
   margin-block-start: 1.25rem;
+  z-index: 10;
 }
 
 .nav__hamburger.active .hamburger__line {
@@ -688,6 +691,26 @@ body._lock {
   left: -32%;
   top: 50%;
   transform: translate(0, 0) rotate(90deg);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* right: 0;
+  bottom: 0; */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .footer {

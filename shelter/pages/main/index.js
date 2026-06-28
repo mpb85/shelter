@@ -24,19 +24,26 @@ function openBurger() {
     hamburgerMenu.classList.toggle('active');
     headerMenu.classList.toggle('show');
     document.body.classList.toggle('_lock');
-    document.addEventListener('click', closeBurgerOnClickOutside);
+    document.getElementById('overlay').classList.toggle('active');
+   // document.addEventListener('click', closeBurgerOnClickOutside);
 }
 function closeBurger() {
     hamburgerMenu.classList.remove('active');
     headerMenu.classList.remove('show');
     document.body.classList.remove('_lock');
-    document.removeEventListener('click', closeBurgerOnClickOutside)
+    document.getElementById('overlay').classList.remove('active');
+   // document.removeEventListener('click', closeBurgerOnClickOutside)
 }
 
-function closeBurgerOnClickOutside(e) {
+/* function closeBurgerOnClickOutside(e) {
     if (!hamburgerMenu.contains(e.target) && !headerMenu.contains(e.target)) {
         closeBurger();
     }
-}
+} */
 
 
+
+/*--------------------------------------- POPUP -------------------------------------*/
+
+/*--------------------------------------- carusel -----------------------------------*/
+const PETS = JSON.stringify()

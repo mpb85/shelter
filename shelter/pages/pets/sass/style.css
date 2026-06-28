@@ -572,11 +572,13 @@ body._lock {
 @media only screen and (min-width: 321px) and (max-width: 767.98px) {
   .menu__list {
     gap: 2.8rem;
+    z-index: 10;
   }
 }
 @media (max-width: 320px) {
   .menu__list {
     gap: 2.8rem;
+    z-index: 10;
   }
 }
 
@@ -642,24 +644,28 @@ body._lock {
 
 .nav__hamburger {
   margin-block-start: 0.3rem;
+  z-index: 10;
 }
 
 .nav__hamburger.active .hamburger__line {
   left: -50%;
   top: 50%;
   transform: translate(50%, 0) rotate(90deg);
+  background-color: #fff;
 }
 
 .nav__hamburger.active::before {
   left: 7%;
   top: 50%;
   transform: translate(25%, 0) rotate(90deg);
+  background-color: #fff;
 }
 
 .nav__hamburger.active::after {
   left: -32%;
   top: 50%;
   transform: translate(0, 0) rotate(90deg);
+  background-color: #fff;
 }
 
 .nav__hamburger::after {
@@ -667,12 +673,12 @@ body._lock {
 }
 @media only screen and (min-width: 321px) and (max-width: 767.98px) {
   .nav__hamburger::after {
-    background-color: #fff;
+    background-color: #292929;
   }
 }
 @media (max-width: 320px) {
   .nav__hamburger::after {
-    background-color: #fff;
+    background-color: #292929;
   }
 }
 
@@ -681,12 +687,12 @@ body._lock {
 }
 @media only screen and (min-width: 321px) and (max-width: 767.98px) {
   .nav__hamburger::before {
-    background-color: #fff;
+    background-color: #292929;
   }
 }
 @media (max-width: 320px) {
   .nav__hamburger::before {
-    background-color: #fff;
+    background-color: #292929;
   }
 }
 
@@ -695,13 +701,33 @@ body._lock {
 }
 @media only screen and (min-width: 321px) and (max-width: 767.98px) {
   .hamburger__line {
-    background-color: #fff;
+    background-color: #292929;
   }
 }
 @media (max-width: 320px) {
   .hamburger__line {
-    background-color: #fff;
+    background-color: #292929;
   }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* right: 0;
+  bottom: 0; */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .footer {
